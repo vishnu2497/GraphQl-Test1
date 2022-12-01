@@ -9,6 +9,7 @@ id:ID
 name : String
 author : String
 testName : String
+firstName:String
 }
 
 

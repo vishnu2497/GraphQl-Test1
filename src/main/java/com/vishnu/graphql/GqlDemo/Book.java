@@ -1,9 +1,13 @@
 package com.vishnu.graphql.GqlDemo;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Arrays;
 import java.util.List;
 
+@Entity
 public class Book {
+    @Id
     private String id;
 
     private String name;
