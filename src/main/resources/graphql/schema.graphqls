@@ -2,6 +2,10 @@ type Query {
 bookById (id: ID): Book
 helloMessage : String
 helloRandom : Int
+employees : [Employee]
+companies : [Company]
+empById ( id: ID!) : Employee
+cmpById (id : ID!) : Company
 }
 
 type Book{
@@ -10,6 +14,20 @@ name : String
 author : String
 testName : String
 firstName:String
+}
+
+type Company{
+id : ID!
+name : String
+description : String
+}
+
+type Employee{
+id : ID!
+firstName:String
+lastName:String
+jobLevel:Int
+companyId:String
 }
 
 
